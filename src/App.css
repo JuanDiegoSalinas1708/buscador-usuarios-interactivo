@@ -1,0 +1,50 @@
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Logo */
+.logo {
+  height: 4rem;
+  margin-bottom: 1rem;
+  transition: opacity 0.3s ease;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Documentation link */
+.read-the-docs {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+.read-the-docs:hover {
+  color: #444;
+}
+
+/* Remove animation (optional cleanup) */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: none;
+  }
+}
